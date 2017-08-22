@@ -11,7 +11,6 @@
         }
         
         fieldset {
-            height: 270px;
             width: 700px
         }
         
@@ -20,9 +19,8 @@
         }
         
         img {
-            width: 120px
+            width: 120px;
         }
-
     </style>
 
 
@@ -43,9 +41,9 @@
             <label for="email">Email</label>
             <input id='email' name="email" type="email" placeholder="Please enter your Email"><br><br>
             <label for="phone">Phone</label>
-            <input id='phone' name="phone number" type="Phone" placeholder="Please enter your name"><br><br>
+            <input id='phone' name="phone number" type="tel" placeholder="Please enter your name"><br><br>
             <label for="address">Address</label>
-            <input name='address' id="address" type="address" placeholder="Please enter your address">
+            <input name='address' id="address" type="text" placeholder="Please enter your address">
 
 
 
@@ -73,7 +71,7 @@
             <br><br><label for="people">People(1-10):</label>
             <input id='people' name='people' type="range" min='1' max="10">
             <br><br><label for="date">Date:</label>
-            <input name='date' id='date' type="Date" placeholder="">
+            <input name='date' id='date' type="date" placeholder="">
             <br><br>
             <label for="payment">Payments:</label>
             <input name='payment' id='payment' type="radio" value="MasterCard">MasterCard
@@ -84,12 +82,12 @@
         <br><br>
         <p>Please Write your additional requirements:</p>
 
-        <textarea name="speical requirements" id="" cols="70" rows="10"></textarea>
+        <textarea name="speicalrequirements" id="" cols="70" rows="10"></textarea>
 
-<br><input type="submit">
-<input type="reset">
+        <br><input type="submit">
+        <input type="reset">
 
-</form>
+    </form>
 
 
 </body>

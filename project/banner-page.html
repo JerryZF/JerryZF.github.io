@@ -4,6 +4,9 @@
 <head>
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <style>
+		* {
+			box-sizing: border-box;
+		}
         h1 {
             color: firebrick;
             text-align: center;
@@ -12,6 +15,7 @@
         
         div#whole {
             border: inset darkgrey;
+			text-align: center;
         }
         
         p {
@@ -22,15 +26,13 @@
             font-weight: bold;
         }
         
-        div#submit {
-            border-color: firebrick;
-            border: solid;
-            margin-left: 200px;
-            margin-bottom: 100px;
-            margin-right: 200px;
-            margin-top: 20px;
+		form {
+			width: 400px;
             border-radius: 100px;
-            border-color: firebrick;
+			width: 360px;
+			display: inline-block;
+			margin-bottom: 100px;
+			text-align: right;
         }
         
         hr {
@@ -42,23 +44,33 @@
             display: inline-block;
         }
         
-        div#email {
-            width: 250px;
-            padding: 15px;
+        input#email {
+			height: 52px;
+			border: solid;
+            border-color: firebrick;
+            width: 65.8%;
+            padding: 14px;
             font-family: 'Raleway', sans-serif;
+			border-top-left-radius: 100px;
+			border-bottom-left-radius: 100px;
+			font-size: 16px;
+			vertical-align: top;
         }
         
-        div#tell {
-            padding: 15px;
+        input#tell {
+            padding: 18px;
             width: 103px;
             background-color: firebrick;
             border-bottom-right-radius: 100px;
             border-top-right-radius: 100px;
-            box-sizing: border-box;
-            text-align: center;
+/*            box-sizing: border-box;*/
+/*            text-align: center;*/
             font-family: 'Raleway', sans-serif;
             font-weight: bold;
             color: white;
+			width: 33%;
+			border: none;
+			margin-left: -5px;
         }
     </style>
 
@@ -72,16 +84,16 @@
         <br>
         <p>Supporting a well-spent life, a bright career and entrepreneurship <br> Promoting STEM education Science-Technology-Engineering-Math</p><br><br>
         <form action="">
-            <div id="submit">
-                <div id="email">Please Enter Your Email</div>
-                <div id="tell">Submit</div>
-            </div>
+<!--            <div id="submit">-->
+                <input id="email" placeholder="Please Enter Your Email">
+                <input id="tell" type='submit'>
+<!--            </div>-->
 
         </form>
-
     </div>
-
-
 </body>
-
 </html>
+
+
+
+

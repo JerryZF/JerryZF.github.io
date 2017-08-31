@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<style>
+		body {
+			height: 2000px;
+		}
+		
+		.container {
+			overflow: auto;
+			height: 300px;
+			border: solid blue;
+			
+			background-image: url(/images/burger.jpg);
+			
+			background-repeat: no-repeat;
+			background-size: 300px;
+		}
+		
+		.scroll {
+			background-attachment: scroll;
+		}
+		
+		.local {
+			background-attachment: local;
+		}
+		
+		.fixed {
+			background-attachment: fixed;
+			background-position: center;
+		}
+		
+		.expand {
+			height: 600px;
+		}
+	</style>
+	
+</head>
+<body>
+	
+	<div class="container scroll">
+		<div class="expand"></div>
+	</div>
+	
+	<div class="container local">
+		<div class="expand"></div>
+	</div>
+	
+	<div class="container fixed">
+		<div class="expand"></div>
+	</div>
+	
+</body>
+</html>
+

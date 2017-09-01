@@ -7,11 +7,12 @@
     <style>
         legend {
             font-family: serif;
-            font-size: 1.2em
+            font-size: 1.2em;
         }
         
         fieldset {
-            width: 700px
+            width: 700px;
+            padding: 20px;
         }
         
         label {
@@ -21,8 +22,11 @@
         img {
             width: 120px;
         }
-    
         
+        div {
+            width: 70px;
+            display: inline-block;
+        }
     </style>
 
 
@@ -38,13 +42,14 @@
            <option value="Mrs">Mrs.</option>
        </select>
 
-            <br><label for="name">Name</label>
+            <br><br>
+            <div><label for="name">Name</label></div>
             <input id='name' type="text" name="name" placeholder="Please enter your name"><br><br>
-            <label for="email">Email</label>
+            <div><label for="email">Email</label></div>
             <input id='email' name="email" type="email" placeholder="Please enter your Email"><br><br>
-            <label for="phone">Phone</label>
+            <div><label for="phone">Phone</label></div>
             <input id='phone' name="phone number" type="tel" placeholder="Please enter your name"><br><br>
-            <label for="address">Address</label>
+            <div><label for="address">Address</label></div>
             <input name='address' id="address" type="text" placeholder="Please enter your address">
 
 

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .container {
+            width: 500px;
+            height: 200px;
+            background-color: dodgerblue;
+        }
+        
+        .item {
+            width: 100px;
+            height: 100px;
+            background-color: cornsilk;
+            /*            position: static;*/
+        }
+        
+        .relative {
+            position: relative;
+            left: 100px;
+            top: 50px;
+        }
+        
+        .absolute {
+            position: absolute;
+            left: 150px;
+            top: 100px;
+        }
+        
+        .absolutecontainer {
+            position: relative;
+        }
+        
+        .item2 {
+            width: 100px;
+            height: 100px;
+            background-color: limegreen;
+        }
+        .fixed{
+            position: fixed;
+            background-color: darkviolet;
+            right: 10px;
+            bottom: 10px;
+        }
+    
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item relative"></div>
+        <div class="item2"></div>
+    </div>
+    <br>
+    <div class="container absolutecontainer">
+        <div class="item absolute"></div>
+        <div class="item2"></div>
+    </div>
+    <li>Abosolute will free its original space,but relative cannot.</li>
+    <li>Relative depends on its original position.</li>
+    <li>Abosolute depends on its container ,which means the container must not be a static position.</li>
+    <div class="item fixed"></div>
+
+</body>
+</html>

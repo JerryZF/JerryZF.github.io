@@ -1,34 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <style>    
-        div{
-            display:inline-block;
-            width: 150px;
-            text-align: center;
-            padding: 12px;
-            box-sizing: border-box
-        }
-        li:before{
-            content:""
-            
-        }
-    </style>
+	<style>
+		li {
+			display: inline-block;
+		    text-decoration: none;
+            padding-right: 10px;
+		}	
+		
+		li:before {
+			content:'\2022';
+			padding-right: 10px;
+		}
+		li:first-child:before {
+			content:''
+		}
+
+	</style>
 </head>
+
 <body>
- <ul>
-     <div>
-         <p>About<p>
-     </div
-     <div>
-         <li>Products</li>
-     </div>
-     <div>
-         <li>Services</li>
-     </div>
-     <div>
-         <li>Contact</li>
-     </div>
- </ul>
+	<ul>
+		<li><a href="">About</a></li>
+		<li><a href="">Products</a></li>
+		<li><a href="">Services</a></li>
+		<li><a href="">Contact</a></li>
+	</ul>
 </body>
 </html>
+

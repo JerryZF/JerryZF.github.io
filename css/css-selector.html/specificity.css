@@ -1,0 +1,79 @@
+    li {
+        font-size: 2em;
+        border: solid;
+        color: grey;
+        margin-top: 10px;
+    }
+    
+    .badminton {
+        color: black !important;
+    }
+    
+    #badminton {
+        color: brown;
+    }
+    
+    p {
+        font-size: 2em;
+        font-style: italic;
+    }
+    
+    h2 {
+        font-size: ;
+    }
+
+.ipad-section {
+    padding:50px 70px;
+    border: solid grey 20px;
+}
+
+
+.section-ipad-heading {
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#options {
+    
+}
+
+#ipad-intro {
+    margin-bottom: 20px;
+}
+
+.ipad-hr {
+    margin-top: 20px;
+}
+
+.connection {
+    background-image: url(/images/maxresdefault.jpg)
+}
+
+.connect {
+    font-size: 20px;
+}
+
+.bottom-icon {
+    margin: auto;
+    text-align: center;
+}
+
+.bottom-items {
+    float: left;
+}
+
+#bottom {
+    display: inline-block;
+}
+
+.bottom-list {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#bottom-to-top {
+    
+}
+
+.copyright {
+    margin-top: 10px;
+}

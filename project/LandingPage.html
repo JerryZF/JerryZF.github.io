@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <script src="https://use.fontawesome.com/fef936c761.js"></script>
+    <script src="https://use.fontawesome.com/8b6cb598a7.js"></script>
+    <script src="https://use.fontawesome.com/489e4514c4.js"></script>
+    <style>
+        * {
+            padding: 0;
+            margin-top: 0px;
+            box-sizing: border-box;
+
+        }
+
+        body {
+            margin: 0px;
+            z-index: 0;
+        }
+
+        .land {
+            background-image: url(/images/intro-bg.jpg);
+            width: 100%;
+            background-size: cover;
+            text-align: center;
+            padding: 250px 0%;
+        }
+
+        .land hr {
+            margin: auto;
+        }
+
+        .message {}
+
+        h1 {
+            font-size: 66px;
+            color: #ffffff;
+            margin: 0;
+            text-shadow: 0px 7px 10px black;
+            font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+
+        h2,
+        p {
+            font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+
+        h2 {
+            font-size: 2rem;
+        }
+
+        p {
+            font-size: 25px;
+            font-weight: 100;
+        }
+
+        #Template {
+            font-size: 24px;
+            margin: 17px;
+            color: #ffffff;
+            text-shadow: 0px 7px 10px black;
+        }
+
+        #top,
+        #bottom {
+            border: solid;
+            border-color: transparent;
+            border-radius: 7px;
+            background-color: #b1b1b1;
+            display: block;
+            height: 50px;
+            width: 140px;
+            margin: 5px;
+            box-sizing: border-box;
+            margin: auto;
+            margin-bottom: 15px;
+        }
+
+        hr {
+            width: 250px;
+            margin: 0;
+        }
+
+        .icon {
+            display: block;
+            padding: 5px;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .fa {
+            display: inline-block;
+            color: white;
+            font-size: 25px;
+            position: relative;
+            left: -3px;
+            top: 9px;
+        }
+
+        .network {
+            text-decoration: none;
+            font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            color: white;
+            font-size: 17px;
+            font-weight: bold;
+            position: relative;
+            left: 8px;
+            top: 6px
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        @media screen and (min-width:768px) {
+            .items a {
+                display: inline-block;
+                margin: 5px;
+            }
+        }
+
+        #top {
+            display: inline-block;
+            margin-right: 15px;
+        }
+
+        #top:hover {
+            background: #000000;
+            transform: perspective(1px) translateZ(0);
+            transition-duration: 0.3s;
+        }
+
+        #bottom:hover {
+            background: #000000;
+            transform: perspective(1px) translateZ(0);
+            transition-duration: 0.3s;
+        }
+
+        .title {
+            position: fixed;
+            width: 100%;
+            z-index: 10;
+            padding: 20px 50px;
+            background-color: #f7f7f7;
+        }
+
+        .title ul {
+            padding-left: 0;
+        }
+
+        .title ul li:not(:first-child) {
+            margin-left: 20px;
+        }
+
+        #start,
+        #options,
+        .list {
+            display: inline-block;
+            font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 20px;
+        }
+
+        @media screen and (min-width: 768px) {
+            #start {
+                font-size: 20px;
+                margin-left: 10%;
+            }
+        }
+
+        #options {
+            display: block;
+            /*                position: absolute;*/
+            /*                right: 130px;*/
+            margin: 0;
+            font-weight: 600;
+            color: grey;
+        }
+
+        @media screen and (min-width: 768px) {
+            #options {
+                position: absolute;
+                top: 20px;
+                right: 130px;
+                font-weight: 600;
+                color: grey;
+            }
+        }
+
+        .list {
+            /*            margin: 20px;*/
+            font-size: 17px;
+        }
+
+        /* ipad section       */
+
+        #ipad {
+            width: 100%;
+        }
+
+        .section-ipad-heading {
+            margin-top: 30px;
+            margin-bottom: 30px
+        }
+
+        .ipad-section {
+            padding: 50px 15%;
+            overflow: hidden;
+            background-color: #f4f4f4
+        }
+
+        #ipad-intro {
+            margin-bottom: 28px;
+        }
+
+        @media screen and (min-width:768px) {
+            .intro-ipad {
+                float: left;
+                width: 48%;
+                padding: 10px;
+            }
+            #ipad {
+                float: right;
+                width: 48%;
+            }
+        }
+
+        }
+
+        @media screen and (min-width:995px) {
+            .ipad-section {
+                padding: 50px 15%;
+            }
+
+            .intro-ipad {
+                padding: 10px;
+            }
+        }
+
+        /*    dog-section*/
+
+        #dog {
+            width: 100%;
+        }
+
+        .section-dog-heading {
+            margin-top: 30px;
+            margin-bottom: 30px
+        }
+
+        .dog-section {
+            padding: 50px 15%;
+            overflow: hidden;
+        }
+
+        #dog-paragraph {
+            margin-bottom: 28px;
+        }
+
+        @media screen and (min-width:768px) {
+            .intro-dog {
+                float: right;
+                width: 48%;
+                padding: 10px;
+            }
+
+            #dog {
+                float: left;
+                width: 48%;
+            }
+        }
+
+        @media screen and (min-width:995px) {
+            .dog-section {
+                padding: 50px 15%;
+            }
+
+            .intro-dog {
+                padding: 10px;
+            }
+        }
+
+        /*        iphone section*/
+
+        #iphone {
+            width: 100%;
+        }
+
+        .section-iphone-heading {
+            margin-top: 30px;
+            margin-bottom: 30px
+        }
+
+        .iphone-section {
+            padding: 50px 15%;
+            overflow: hidden;
+            background-color: #f4f4f4
+        }
+
+        #iphone-intro {
+            margin-bottom: 28px;
+        }
+
+        @media screen and (min-width:768px) {
+            .intro-iphone {
+                float: left;
+                width: 48%;
+                padding: 10px;
+            }
+
+            #iphone {
+                float: right;
+                width: 48%;
+            }
+        }
+
+        }
+
+        @media screen and (min-width:995px) {
+            .iphone-section {
+                padding: 50px 15%;
+            }
+            .intro-iphone {
+                padding: 10px;
+            }
+        }
+
+        /*        connection section*/
+
+        .connection {
+            background-image: url(/images/banner-bg.jpg);
+            background-size: cover;
+            padding: 50px 10%;
+            overflow: hidden
+        }
+
+        .connect {
+            font-size: 50px;
+        }
+
+        .bottom-icon {
+            margin: auto;
+            text-align: center;
+            margin-top: 50px
+        }
+
+        .bottom-items {
+            float: left;
+        }
+
+        @media screen and (min-width:768px) {
+            .bottom-items {
+                float: right;
+                display: inline-block;
+            }
+            #bottom {
+                display: inline-block;
+                margin-right: 20px;
+            }
+            .connect {
+                display: inline-block;
+                float: left;
+            }
+            .connection {
+                padding: 100px 15%;
+                overflow: hidden;
+            }
+        }
+
+        .bottom-list {
+            display: inline-block;
+            margin-right: 10px;
+            font-size: 18px;
+
+        }
+
+        .copyright {
+            margin: 50px;
+
+        }
+
+        #bottom-message {
+            margin-top: 20px;
+            font-size: 20px;
+            color: grey;
+        }
+
+        #bottom-to-top {
+            color: rgb(0, 0, 0);
+            
+        }
+        #bottom-to-top:hover{
+            color: #585858;
+            text-decoration: underline;
+        }
+        
+
+        @media screen and (min-width:768px) {
+            .copyright {
+                text-align: center;
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav class="title">
+        <div id="start">Start Bootstrap</div>
+        <ul id="options">
+            <li class="list">Service</li>
+            <li class="list">Contact</li>
+            <li class="list">About</li>
+        </ul>
+    </nav>
+    <div class="land">
+        <div class="message">
+            <h1>Landing Page</h1>
+            <h2 id="Template">A Template by Start Bootstrap</h2>
+            <hr>
+            <div class="icon">
+                <nav class="items">
+                    <a id="top" href="#">
+                        <i class="fa fa-twitter" aria-hidden="true">
+                        </i>
+                        <span class="network">Twitter</span>
+                    </a>
+                    <a id="top" href="#">
+                        <i class="fa fa-github" aria-hidden="true"> 
+                    </i>
+                        <span class="network">Github</span>
+                    </a>
+                    <a id="top" href="#">
+                        <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                        <span class="network">Facebook</span>
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <section class="ipad-section">
+        <div class="intro-ipad">
+            <hr class="ipad-hr">
+            <h2 class="section-ipad-heading">Death to the Stock Photo: <br>Special Thanks</h2>
+            <p id="ipad-intro">A special thanks to Death to the Stock Photo for providing the photographs that you see in this template. Visit their website to become a member.</p>
+
+        </div>
+        <img id="ipad" src="/images/ipad.png" alt="">
+    </section>
+    <section class="dog-section">
+        <div class="intro-dog">
+            <hr class="dog-part">
+            <h2 class="section-dog-heading">3D Device Mockups <br>by PSDCovers</h2>
+            <p id="dog-paragraph">Turn your 2D designs into high quality, 3D product shots in seconds using free Photoshop actions by PSDCovers! Vistit their website to download some of their awesome, free photoshop actions! </p>
+        </div>
+        <img src="/images/dog.png" alt="" id="dog">
+    </section>
+    <section class="iphone-section">
+        <div class="intro-iphone">
+            <hr class="iphone-hr">
+            <h2 class="section-iphone-heading">Google Web Fonts and <br>Awesome Icons</h2>
+            <p id="iphone-intro">This template features the 'Lato'font, part of the Google Web Font library, as well as icons from Font Awesome.</p>
+
+        </div>
+        <img id="iphone" src="/images/phones.png" alt="">
+    </section>
+
+    <section class="connection">
+        <h1 class="connect">Connet to Start <br>Bootstrap:</h1>
+        <div class="bottom-icon">
+            <nav class="bottom-items">
+                <a id="bottom" href="#">
+                    <i class="fa fa-twitter" aria-hidden="true">
+                        </i>
+                    <span class="network">Twitter</span>
+                </a>
+                <a id="bottom" href="#">
+                    <i class="fa fa-github" aria-hidden="true"> 
+                    </i>
+                    <span class="network">Github</span>
+                </a>
+                <a id="bottom" href="#">
+                    <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                    <span class="network">Facebook</span>
+                </a>
+            </nav>
+
+        </div>
+    </section>
+
+    <footer class="copyright">
+        <ul>
+            <li class="bottom-list"><a id="bottom-to-top" href="">Home</a></li>
+            <li class="bottom-list"><a id="bottom-to-top" href="">About</a></li>
+            <li class="bottom-list"><a id="bottom-to-top" href="">Services</a></li>
+            <li class="bottom-list"><a id="bottom-to-top" href="">Contact</a></li>
+            <p id="bottom-message">Copyright&copy;Your Company. All Rights Reversed</p>
+        </ul>
+
+    </footer>
+
+</body>
+
+</html>

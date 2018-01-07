@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+   <head>
+    <link rel="stylesheet" href="specificity.css">
+    <style>
+        li.badminton{
+            color: red !important;
+        }
+        li[data-att='badminton3']{
+            color:lime !important;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Class specificity</h2>
+    <hr>
+    <p>order>long path>!important>inline-style>id>class>tag</p>
+    <ul>
+        <li>Tennis</li>
+        <li id="badminton" class="badminton" style="color: purple;" data-att='badminton3'>Badminton</li>
+        <li>Hike</li>
+        <li>Swim</li>
+    </ul>
+</body>
+</html>
